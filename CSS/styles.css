@@ -1,0 +1,157 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background: #7D99CB;
+    display: flex;
+    min-height: 100vh;
+}
+.container{
+    margin:auto;
+    width:1092px;
+    background-color: #f3f3f3;
+    /* border: 2px solid purple; */
+    box-shadow: 2px 2px 5px black;
+
+}
+.cards{  
+    display: flex;
+    margin: 20px;
+    /* border: 3px solid blue; */
+}
+
+h2{
+    color:#535DC3;
+    font-size:1.5rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    letter-spacing:6px;
+    margin:1rem;
+}
+p{
+    color:grey;
+    font-family: Arial;
+    margin:1rem;
+    font-size: 17px;
+}
+span{
+    font-size: 2rem;
+}
+.photos{
+    height:100px;
+    width: 80px;
+    /* border:1px solid red; */
+    display: block;
+    margin: auto;
+}
+section{
+    /* border: 1px solid cyan; */
+    width: 33.33%;
+    height: 350px;
+    padding: 30px 20px;
+}
+h2, p{
+    text-align: center;
+}
+section:hover{
+    cursor: pointer;
+    background-color: #dfdfdf;
+}
+section p:last-child{
+    color:#5B64C3;
+}
+
+/* MEDIA QUERY */
+@media screen and (min-width:760px)and (max-width:1097px){
+    body{background-color: pink;}
+    .container{
+        width:90%;
+        height:auto;
+    }
+    h2{
+    font-size:1.2rem;
+    }
+    p{
+        font-size:0.8rem ;
+    }
+}
+
+@media screen and (min-width:569px)and (max-width:759px){
+    body{background-color: red;}
+    .container{
+        width:80%;
+        height:auto;
+    }
+    h2{
+    font-size:1rem;
+    }
+    p{
+        font-size:0.6rem ;
+    }
+    span{
+        font-size:1.3rem;
+    }
+
+}
+@media screen and (min-width:290px)and (max-width:570px){
+    body{background-color:yellow;}
+    .container{
+        width:80%;
+        height:auto;
+    }
+    h2{
+    font-size:0.7rem;
+    letter-spacing:2px;
+    margin:0.2rem;
+    }
+    p{
+        font-size:0.5rem ;
+    }
+    span{
+        font-size:0.8rem;
+    }
+    .photos{
+        height:100px;
+        width: 30px;
+        display: block;
+        margin: auto;
+    }
+    section{
+        padding:0 0;
+        height: auto;
+    }
+}
+
+@media screen and (max-width:289px){
+
+    body{background-color:green;} 
+   .container{
+        width:80%;
+        height:auto;
+    }
+    h2{
+    font-size:0.7rem;
+    letter-spacing:2px;
+    margin:0.2rem;
+    }
+    p{
+        font-size:0.9rem ;
+    }
+    span{
+        font-size:1rem;
+    }
+    .photos{
+        height:50px;
+        width: 30px;
+        margin: auto;
+    }
+    section{
+        width: auto;
+        padding:0;
+        height:auto;
+    }
+    .cards{
+        flex-direction: column;
+    }
+}
